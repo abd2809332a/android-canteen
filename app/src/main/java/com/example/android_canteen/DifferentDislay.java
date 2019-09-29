@@ -50,6 +50,8 @@ public class DifferentDislay extends Presentation implements View.OnClickListene
     Button qc;
     GridView gridview,gridview_cc;
     //下面弹框，出餐框，点餐端
+
+
     LinearLayout popwindow,holdeat_cc,holdeat;
     TextView yixuan,heji,dengcanid;
     Button qdcc;
