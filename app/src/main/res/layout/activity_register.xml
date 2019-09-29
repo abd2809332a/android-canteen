@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="474dp"
+        android:layout_marginRight="370dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="right"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册码："
+                android:textColor="#ff333333"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_regist_et"
+                android:gravity="center_vertical"
+                android:hint="请输入12位数字注册码"
+                android:maxEms="20"
+                android:maxLines="1"
+                android:text="199812195200"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#ff999999"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="百度授权码："
+                android:textColor="#ff333333"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:text="C0A1-TDPU-TD0W-6ATN"
+                android:layout_width="400dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_regist_et"
+                android:gravity="center_vertical"
+                android:hint="请输入16字符授权码"
+                android:maxEms="30"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#ff999999"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="400dp"
+            android:layout_height="56dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_regist_btn"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#fffbf9fa"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="338dp"
+        android:layout_marginRight="342dp"
+        android:background="@drawable/reg_logo" />
+</FrameLayout>

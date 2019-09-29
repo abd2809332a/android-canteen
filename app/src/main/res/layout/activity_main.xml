@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_main_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/holdeat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#333333"
+            android:text="刘伟  等餐中"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="6">
+
+        </GridView>
+
+        <TextView
+        android:id="@+id/yixuan"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="已选："
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/heji"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="合计：¥"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="26dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#F04549"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/quxiao"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:background="@drawable/bg_main_btn_qx"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                 />
+            <Button
+                android:id="@+id/quedingchucan"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="确定出餐"
+                android:textColor="#ffffff"
+                android:textSize="26dp"
+                android:background="@drawable/bg_main_btn_qdcc"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nopeople"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+android:orientation="vertical"
+            >
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"/>
+           <Button
+               android:id="@+id/src_over1"
+               android:layout_width="250dp"
+               android:layout_height="match_parent"
+               android:background="@drawable/bg_main_btn"
+               android:text="退出"
+               android:textColor="#ffffff"
+               android:textSize="25dp"
+               android:layout_marginRight="40dp"/>
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
